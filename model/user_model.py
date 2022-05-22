@@ -7,3 +7,4 @@ class UserModel(Base):
     id = Column(Integer, primary_key=True, index=True)
     firstName = Column(String(20))
     lastName = Column(String(20))
+    email = Column(String(1000), unique=True)
